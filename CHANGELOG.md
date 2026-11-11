@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## [2.6.1] - 2026-11-11
+### Fixed
+- `.unarc()`: arcs with tiny sweep angle (huge radii relative to the chord)
+  are converted to lines instead of curves with end points far away from the
+  real ones. Same threshold (PI / 1e6) as Skia's `SkPathBuilder::arcTo`.
+- `.unarc()`: the last generated curve ends exactly at the arc end point.
+- Published as `@yisibl/svgpath`.
+
+
 ## [2.6.0] - 2022-10-28
 ### Changed
 - For broken paths return valid part instead of discard all, #60.

@@ -6,6 +6,10 @@ svgpath
 [![Coverage Status](https://img.shields.io/coveralls/fontello/svgpath/master.svg?style=flat)](https://coveralls.io/r/fontello/svgpath?branch=master)
 
 
+> This is a fork of [fontello/svgpath](https://github.com/fontello/svgpath),
+> published as `@yisibl/svgpath`. It fixes `.unarc()` for arcs with huge radii
+> (tiny sweep angle), see CHANGELOG.
+
 > Low level toolkit for SVG paths transformations.
 Sometimes you can't use `transform` attributes and have to apply changes to svg paths directly.
 Then this package is for you :) !
@@ -18,7 +22,7 @@ Install
 -------
 
 ```bash
-npm install svgpath
+npm install @yisibl/svgpath
 ```
 
 
@@ -26,7 +30,7 @@ Example
 -------
 
 ```js
-var svgpath = require('svgpath');
+var svgpath = require('@yisibl/svgpath');
 
 var transformed = svgpath(__your_path__)
                     .scale(0.5)
