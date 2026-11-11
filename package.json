@@ -1,6 +1,6 @@
 {
-  "name": "svgpath",
-  "version": "2.6.0",
+  "name": "@yisibl/svgpath",
+  "version": "2.6.1",
   "description": "Low level toolkit for SVG paths transformations.",
   "keywords": [
     "svg",
@@ -13,7 +13,11 @@
   ],
   "license": "MIT",
   "funding": "https://github.com/fontello/svg2ttf?sponsor=1",
-  "repository": "fontello/svgpath",
+  "repository": "yisibl/svgpath",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "lint": "eslint .",
     "test": "npm run lint && nyc mocha",
